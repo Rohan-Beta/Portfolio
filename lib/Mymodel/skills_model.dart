@@ -1,6 +1,6 @@
 class SkillModel {
   final String skill;
-  final String percentage;
+  final int percentage;
 
   SkillModel({
     required this.skill,
