@@ -36,7 +36,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
     );
 
     return Scaffold(
-      body: ScreenHelepr(
+      body: ScreenHeleper(
         mobile: mobileHeader(),
         tablet: desktopHeader,
         desktop: desktopHeader,

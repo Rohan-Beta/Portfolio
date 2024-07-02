@@ -2,23 +2,18 @@
 
 import 'package:flutter/material.dart';
 
-class ScreenHelepr extends StatefulWidget {
+class ScreenHeleper extends StatelessWidget {
   final Widget mobile;
   final Widget tablet;
   final Widget desktop;
 
-  const ScreenHelepr({
+  const ScreenHeleper({
     super.key,
     required this.mobile,
     required this.tablet,
     required this.desktop,
   });
 
-  @override
-  State<ScreenHelepr> createState() => _ScreenHeleprState();
-}
-
-class _ScreenHeleprState extends State<ScreenHelepr> {
   static bool isMobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 800.0;
 
@@ -41,12 +36,12 @@ class _ScreenHeleprState extends State<ScreenHelepr> {
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth >= 1200) {
-            return widget.desktop;
+            return desktop;
           } else if (constraints.maxHeight >= 800 &&
               constraints.maxWidth < 1200) {
-            return widget.tablet;
+            return tablet;
           } else {
-            return widget.mobile;
+            return mobile;
           }
         },
       ),
