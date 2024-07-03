@@ -12,6 +12,6 @@ class EducationScreen extends StatefulWidget {
 class _EducationScreenState extends State<EducationScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container();
   }
 }

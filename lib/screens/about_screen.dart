@@ -12,6 +12,6 @@ class AboutScreen extends StatefulWidget {
 class _AboutScreenState extends State<AboutScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container();
   }
 }

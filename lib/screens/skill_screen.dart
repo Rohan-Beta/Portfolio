@@ -12,6 +12,6 @@ class SkillScreen extends StatefulWidget {
 class _SkillScreenState extends State<SkillScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container();
   }
 }

@@ -12,6 +12,6 @@ class FooterScreen extends StatefulWidget {
 class _FooterScreenState extends State<FooterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Container();
   }
 }

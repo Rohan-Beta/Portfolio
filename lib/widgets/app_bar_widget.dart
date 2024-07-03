@@ -35,12 +35,10 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       ),
     );
 
-    return Scaffold(
-      body: ScreenHeleper(
-        mobile: mobileHeader(),
-        tablet: desktopHeader,
-        desktop: desktopHeader,
-      ),
+    return ScreenHeleper(
+      mobile: mobileHeader(),
+      tablet: desktopHeader,
+      desktop: desktopHeader,
     );
   }
 }
