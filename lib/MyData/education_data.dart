@@ -8,8 +8,12 @@ List<EducationModel> educationData = [
   ),
   EducationModel(
     description: "Class XII",
-    // linkName: "heyflutter",
     linkName: "Central Model School",
-    period: "2019 - 2021",
-  )
+    period: "2021",
+  ),
+  EducationModel(
+    description: "Class X",
+    linkName: "Bharati Vidya Mandir (B.V.M)",
+    period: "2019",
+  ),
 ];

@@ -27,8 +27,8 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Widget> screens = [
     // WelcomeScreen(),
     // AboutScreen(),
-    ProjectScreen(),
-    // EducationScreen(),
+    // ProjectScreen(),
+    EducationScreen(),
     // SkillScreen(),
     // FooterScreen(),
   ];
