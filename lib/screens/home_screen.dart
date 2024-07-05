@@ -25,12 +25,12 @@ class _HomeScreenState extends State<HomeScreen> {
   ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
 
   List<Widget> screens = [
-    // WelcomeScreen(),
-    // AboutScreen(),
-    // ProjectScreen(),
-    // EducationScreen(),
+    WelcomeScreen(),
+    AboutScreen(),
+    ProjectScreen(),
+    EducationScreen(),
     SkillScreen(),
-    // FooterScreen(),
+    FooterScreen(),
   ];
 
   @override

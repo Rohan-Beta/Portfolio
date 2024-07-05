@@ -48,7 +48,7 @@ class _SkillScreenState extends State<SkillScreen> {
                     ),
                     SizedBox(width: 40),
                     Expanded(
-                      flex: ScreenHeleper.isMobile(context) ? 0 : 3,
+                      flex: ScreenHeleper.isMobile(context) ? 0 : 1,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,

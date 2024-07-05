@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/MyData/education_data.dart';
-import 'package:portfolio/MyModel/education_model.dart';
 import 'package:portfolio/utilss/constants.dart';
 import 'package:portfolio/utilss/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -30,7 +29,7 @@ class _EducationScreenState extends State<EducationScreen> {
       height: MediaQuery.of(context).size.height,
       child: Center(
         child: Padding(
-          padding: const EdgeInsets.only(left: 8, right: 8),
+          padding: const EdgeInsets.only(left: 8, right: 8, top: 140),
           child: LayoutBuilder(
             builder: (context, constraints) {
               return ResponsiveWrapper(
