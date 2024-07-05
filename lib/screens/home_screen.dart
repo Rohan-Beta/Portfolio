@@ -28,8 +28,8 @@ class _HomeScreenState extends State<HomeScreen> {
     // WelcomeScreen(),
     // AboutScreen(),
     // ProjectScreen(),
-    EducationScreen(),
-    // SkillScreen(),
+    // EducationScreen(),
+    SkillScreen(),
     // FooterScreen(),
   ];
 
