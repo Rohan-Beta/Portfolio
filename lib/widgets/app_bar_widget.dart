@@ -114,7 +114,7 @@ Widget mobileHeader() {
             child: Icon(
               Icons.menu,
               color: Colors.white,
-              size: 30,
+              size: 28,
             ),
           ),
         ],

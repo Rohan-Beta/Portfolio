@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/MyData/footer_item.data.dart';
 import 'package:portfolio/utilss/constants.dart';
+import 'package:portfolio/utilss/footer_link.dart';
 import 'package:portfolio/utilss/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -31,14 +32,13 @@ class _FooterScreenState extends State<FooterScreen> {
         child: ResponsiveWrapper(
           maxWidth: width,
           minWidth: width,
-          defaultScale: false,
           child: LayoutBuilder(
             builder: (context, constraints) {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Connect With Me",
+                    "Get in touch",
                     style: GoogleFonts.oswald(
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
@@ -53,7 +53,7 @@ class _FooterScreenState extends State<FooterScreen> {
                     child: Wrap(
                       spacing: 20,
                       runSpacing: 20,
-                      children: footerItemsData
+                      children: footerData
                           .map(
                             (FooterItemModel) => SizedBox(
                               height: 120,
@@ -66,15 +66,22 @@ class _FooterScreenState extends State<FooterScreen> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
-                                      Image.asset(
-                                        FooterItemModel.iconPath,
-                                        width: 25,
+                                      ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                          backgroundColor: Colors.transparent,
+                                        ),
+                                        onPressed: () => FooterLink.launchURL(
+                                            FooterItemModel.link),
+                                        child: Image.asset(
+                                          FooterItemModel.iconPath,
+                                          width: 25,
+                                        ),
                                       ),
                                       SizedBox(width: 15),
                                       Text(
                                         FooterItemModel.title,
                                         style: TextStyle(
-                                          fontSize: 18,
+                                          fontSize: 16,
                                           fontWeight: FontWeight.w700,
                                           color: Colors.white,
                                         ),

@@ -90,17 +90,6 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Image.asset(ProjectModel.image),
-                                          SizedBox(height: 5),
-                                          Text(
-                                            ProjectModel.description,
-                                            maxLines: 4,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: TextStyle(
-                                              color: captionColor,
-                                              fontSize: 20,
-                                            ),
-                                          ),
                                           IconButton(
                                             onPressed: () =>
                                                 ProjectLink.launchURL(
@@ -111,6 +100,17 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                               0xFFD9DEEC,
                                             ),
                                             iconSize: 24,
+                                          ),
+                                          Image.asset(ProjectModel.image),
+                                          SizedBox(height: 5),
+                                          Text(
+                                            ProjectModel.description,
+                                            maxLines: 4,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: TextStyle(
+                                              color: captionColor,
+                                              fontSize: 20,
+                                            ),
                                           ),
                                         ],
                                       ),

@@ -125,26 +125,18 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             padding: EdgeInsets.all(20),
                           ),
                           onPressed: () {},
-                          child: Text(
-                            "Download CV",
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.purple,
-                            ),
+                          child: AnimatedTextKit(
+                            animatedTexts: [
+                              ColorizeAnimatedText(
+                                "Download CV",
+                                textStyle: TextStyle(
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                colors: colorizeColors,
+                              ),
+                            ],
                           ),
-                          //     AnimatedTextKit(
-                          //   animatedTexts: [
-                          //     ColorizeAnimatedText(
-                          //       "Download CV",
-                          //       textStyle: TextStyle(
-                          //         fontSize: 30,
-                          //         fontWeight: FontWeight.bold,
-                          //       ),
-                          //       colors: colorizeColors,
-                          //     ),
-                          //   ],
-                          // ),
                         ),
                       ],
                     ),

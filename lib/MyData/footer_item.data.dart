@@ -1,28 +1,24 @@
 import 'package:portfolio/MyModel/footer_item_model.dart';
 
-List<FooterItemModel> footerItemsData = [
-  FooterItemModel(
-    iconPath: "MyAssets/map.png",
-    title: "Adress",
-    text1: "West Bengal,kolkata",
-    text2: "India",
+List<FooterModel> footerData = [
+  FooterModel(
+    iconPath: "MyAssets/linkdin.png",
+    title: "LinkedIn",
+    link: "//www.linkedin.com/in/rohit-raha-b56a872a0/",
   ),
-  FooterItemModel(
-    iconPath: "MyAssets/phone.png",
-    title: "Phone",
-    text1: "8017202787",
-    text2: "",
+  FooterModel(
+    iconPath: "MyAssets/github.png",
+    title: "GitHub",
+    link: "//github.com/Rohan-Beta",
   ),
-  FooterItemModel(
-    iconPath: "MyAssets/email.png",
-    title: "Adress",
-    text1: "rohitraha952@gmail.com",
-    text2: "",
+  FooterModel(
+    iconPath: "MyAssets/leetcode.png",
+    title: "LeetCode",
+    link: "//leetcode.com/u/Rohan-Beta/",
   ),
-  FooterItemModel(
-    iconPath: "MyAssets/whatsapp.png",
-    title: "WhatsApp",
-    text1: "8010202787",
-    text2: "",
+  FooterModel(
+    iconPath: "MyAssets/google.png",
+    title: "Google Developer",
+    link: "//developers.google.com/profile/u/101421734410332855845",
   )
 ];
