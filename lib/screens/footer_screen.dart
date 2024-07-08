@@ -77,7 +77,9 @@ class _FooterScreenState extends State<FooterScreen> {
                                           width: 25,
                                         ),
                                       ),
-                                      SizedBox(width: 15),
+                                      ScreenHeleper.isMobile(context)
+                                          ? SizedBox(width: 0)
+                                          : SizedBox(width: 15),
                                       Text(
                                         FooterItemModel.title,
                                         style: TextStyle(

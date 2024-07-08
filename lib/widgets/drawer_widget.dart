@@ -12,13 +12,14 @@ class DrawerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.black,
       child: SafeArea(
         child: ListView.separated(
           itemBuilder: (context, index) {
             return ListTile(
               title: Text(
                 headerItemsData[index].title,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: Colors.green),
               ),
               onTap: () {
                 itemScrollController.scrollTo(

@@ -87,13 +87,13 @@ class DeskTopBar extends StatelessWidget {
             SizedBox(width: 24),
             menuItem(toPage: 1, title: "About"),
             SizedBox(width: 24),
-            menuItem(toPage: 2, title: "My Projects"),
+            menuItem(toPage: 2, title: "Projects"),
             SizedBox(width: 24),
             menuItem(toPage: 3, title: "Education"),
             SizedBox(width: 24),
-            menuItem(toPage: 4, title: "My Skills"),
+            menuItem(toPage: 4, title: "Skills"),
             SizedBox(width: 24),
-            menuItem(toPage: 5, title: "Contact Me"),
+            menuItem(toPage: 5, title: "Contact"),
           ],
         ),
       ),
@@ -110,7 +110,7 @@ Widget mobileHeader() {
         children: [
           HeaderLogo(),
           GestureDetector(
-            onTap: () => Globals.scaffoldKey.currentState!.openDrawer(),
+            onTap: () => Globals.scaffoldKey.currentState!.openEndDrawer(),
             child: Icon(
               Icons.menu,
               color: Colors.white,
