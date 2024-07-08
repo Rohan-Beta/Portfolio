@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, non_constant_identifier_names, avoid_types_as_parameter_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/MyData/project_data.dart';
-import 'package:portfolio/MyModel/project_model.dart';
 import 'package:portfolio/utilss/constants.dart';
 import 'package:portfolio/utilss/project_links.dart';
 import 'package:portfolio/utilss/screen_helper.dart';
@@ -58,7 +58,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                             fontSize: 30,
                             height: 1.3,
                           ),
-                        ),
+                        ).animate().fade(duration: 2000.ms).slideX(),
                         Wrap(
                           children: [
                             Container(
@@ -72,7 +72,7 @@ class _ProjectScreenState extends State<ProjectScreen> {
                                   color: Colors.white70,
                                   fontSize: 20,
                                 ),
-                              ),
+                              ).animate().fade(duration: 2000.ms).slideY(),
                             ),
                           ],
                         ),

@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, non_constant_identifier_names, avoid_types_as_parameter_names
 
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/MyData/education_data.dart';
 import 'package:portfolio/utilss/constants.dart';
@@ -54,7 +55,7 @@ class _EducationScreenState extends State<EducationScreen> {
                               fontSize: 30,
                               height: 1.3,
                             ),
-                          ),
+                          ).animate().then().shake(duration: 1000.ms),
                           SizedBox(height: 5),
                           Wrap(
                             children: [

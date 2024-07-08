@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/screens/home_screen.dart';
+import 'package:portfolio/screens/splash_screen.dart';
 import 'package:portfolio/utilss/constants.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
           ResponsiveBreakpoint.resize(450, name: DESKTOP),
         ],
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

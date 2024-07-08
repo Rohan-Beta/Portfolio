@@ -2,6 +2,7 @@
 
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio/utilss/constants.dart';
 import 'package:portfolio/utilss/screen_helper.dart';
@@ -69,7 +70,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
                           ),
-                        ),
+                        ).animate().fade(duration: 2000.ms).slideX(),
                         SizedBox(
                           height: 60,
                           child: Row(
@@ -126,6 +127,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                           onPressed: () {},
                           child: AnimatedTextKit(
+                            repeatForever: true,
                             animatedTexts: [
                               ColorizeAnimatedText(
                                 "Download CV",
