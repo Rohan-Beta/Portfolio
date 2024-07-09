@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio/screens/home_screen.dart';
 import 'package:portfolio/screens/splash_screen.dart';
 import 'package:portfolio/utilss/constants.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: name,
+      title: "Portfolio",
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: Theme.of(context).copyWith(

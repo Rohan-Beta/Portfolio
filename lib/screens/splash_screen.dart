@@ -18,7 +18,8 @@ class SsplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(
-      Duration(milliseconds: 2480),
+      // Duration(milliseconds: 2480),
+      Duration(milliseconds: 2600),
       () {
         Navigator.pushReplacement(
           context,
