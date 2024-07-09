@@ -4,7 +4,7 @@ List<FooterModel> footerData = [
   FooterModel(
     iconPath: "Myassets/linkdin.png",
     title: "LinkedIn",
-    link: "//www.linkedin.com/in/rohit-raha-b56a872a0/",
+    link: "//www.linkedin.com/in/rohitraha/",
   ),
   FooterModel(
     iconPath: "Myassets/github.png",

@@ -37,35 +37,33 @@ class _AboutScreenState extends State<AboutScreen> {
                 fontSize: 24,
                 height: 1.3,
               );
-              return Expanded(
-                child: ResponsiveWrapper(
-                  maxWidth: width,
-                  minWidth: width,
-                  child: Flex(
-                    direction: ScreenHeleper.isMobile(context)
-                        ? Axis.vertical
-                        : Axis.horizontal,
-                    children: [
-                      Expanded(
-                        flex: ScreenHeleper.isMobile(context) ? 0 : 3,
-                        child: Lottie.asset(
-                          "Myassets/animation/coder.json",
-                          width: 500,
-                        ),
+              return ResponsiveWrapper(
+                maxWidth: width,
+                minWidth: width,
+                child: Flex(
+                  direction: ScreenHeleper.isMobile(context)
+                      ? Axis.vertical
+                      : Axis.horizontal,
+                  children: [
+                    Expanded(
+                      flex: ScreenHeleper.isMobile(context) ? 0 : 3,
+                      child: Lottie.asset(
+                        "Myassets/animation/coder.json",
+                        width: 500,
                       ),
-                      SizedBox(width: 40),
-                      Expanded(
-                        flex: ScreenHeleper.isMobile(context) ? 0 : 4,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(aboutFirst, style: style),
-                            Text(aboutLast, style: style),
-                          ],
-                        ),
+                    ),
+                    SizedBox(width: 40),
+                    Expanded(
+                      flex: ScreenHeleper.isMobile(context) ? 0 : 4,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(aboutFirst, style: style),
+                          Text(aboutLast, style: style),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               );
             },
