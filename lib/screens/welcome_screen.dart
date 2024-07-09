@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:lottie/lottie.dart';
 import 'package:portfolio/utilss/constants.dart';
+import 'package:portfolio/utilss/cv_link.dart';
 import 'package:portfolio/utilss/screen_helper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -125,7 +126,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                             padding: EdgeInsets.all(20),
                           ),
-                          onPressed: () {},
+                          onPressed: () => CvLink.launchURL(
+                              "//drive.google.com/file/d/1u2IAJCTlfT228JMkXteCIeS0V5kcGDzM/view"),
                           child: AnimatedTextKit(
                             repeatForever: true,
                             animatedTexts: [
